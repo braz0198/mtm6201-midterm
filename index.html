@@ -6,40 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackson's Midterm</title>
+    <link href=css/main.css rel="stylesheet">
   
   </head>
   <body>
     <div class="container">
       <!-- Starting Content -->
       <main id="homepage" role="main">
+        <!-- ***START OF HEADER*** -->
         <header class="banner" role="banner">
-        <h1 role="heading">Sweet Treats Bakery</h1> <!-- Need google fonts for ariel rounded mt -->
+        <h1 role="heading">Sweet Treats Bakery</h1>
         <h2 role="heading">"A flavour for every mood"</h2>      
         </header>
+        <!-- ***END OF HEADER*** -->
+        <!-- ***START OF NAVIGATION*** -->
+        <picture>
+          <source srcset="images/buns-mobile.jpg"
+          media="(min-width: 300px)"/>
+        </picture>
         <nav class="sidenav" role="navigation">
           <ul>
-            <li role="listitem"><a href="#home" aria-current="page" role="link">Home</a></li>
-            <li role="listitem"><a href="about.html" aria-current="page" role="link">About Us</a></li>
+            <li role="listitem"><a href="#homepage" aria-current="page" role="link">Home</a></li>
             <li role="listitem"><a href="flavours.html" aria-current="page" role="link">Flavours</a></li>
-            <li role="listitem"><h2>#moods</h2></li>
+            <li role="listitem"><a href="#orderform" aria-current="page" role="link">Order</a></li>
+            <li role="listitem"><h2>Hours</h2></li>
+            <li role="listitem"><a href="about.html" aria-current="page" role="link">About Us</a></li>
+            <li role="listitem"><a href="#" aria-current="page" role="link">#moods</a></li>
           </ul>
         </nav>
-        <section class="orderform" role="form">
+        <!-- ***END OF NAVIGATION*** -->
+        <!-- ***START OF ORDER FORM*** -->
+        <section id="orderform" role="form" aria-label="Order form for our baked goods">
           <h1 role="heading">Place an order for pickup:</h1>
           <form action="index.html" role="form">
-            <label>Full Name</label>
-            <input type="text" placeholder="Your name here">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <b>Your Message</b>
-            <textarea></textarea>
-            <button type="submit" role="button">ORDER</button>
+            <label aria-label="input field for your full name">Full name</label>
+            <input type="text" placeholder="Name">
+            <label aria-label="input field for your contact information">Info</label>
+            <input type="text" placeholder="Phone number or email">
+            <label aria-label="input field for what you would like to order">I would like some</label>
+            <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, diam in aliquet dapibus, sem nibh varius ante, ac fermentum nisi lacus tempus tellus. In commodo sapien sit amet enim blandit malesuada nec vel justo. Nam at lectus vitae Leo hendrerit fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, diam in aliquet dapibus, sem nibh varius ante, ac fermentum nisi lacus tempus tellus. In commodo sapien sit amet enim blandit malesuada nec vel justo. Nam at lectus vitae Leo hendrerit fringilla. Vestibulum fringilla, ex ut lacinia faucibus, velit tortor hendrerit mi, et finibus est est vel mauris."></textarea>
+            <button type="submit" role="button">Order</button>
           </form>
         </section>
+        <!-- ***END OF ORDER FORM*** -->
       </main>
+      <!-- ***START OF FOOTER***-->
       <footer class="footer" role="contentinfo">
         &copy; <strong>Sweet Treats Bakery</strong>
       </footer>
+      <!-- *** END OF FOOTER***-->
     </div>
   </body>
 </html>
