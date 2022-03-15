@@ -3,9 +3,9 @@
 
 
 @font-face {
-    font-family: 'arial_blackregular';
-    src: url('arial_black-webfont.woff2') format('woff2'),
-         url('arial_black-webfont.woff') format('woff');
+    font-family: 'arial_black';
+    src: url(../fonts/arial_black-webfont.woff2) format('woff2'),
+         url(../fonts/arial_black-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'arial_rounded_mt_boldregular';
-    src: url('arial_rounded_bold-webfont.woff2') format('woff2'),
-         url('arial_rounded_bold-webfont.woff') format('woff');
+    src: url(../fonts/arial_rounded_bold-webfont.woff2) format('woff2'),
+         url(../fonts/arial_rounded_bold-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'pt_monoregular';
-    src: url('ptmono-regular-webfont.woff2') format('woff2'),
-         url('ptmono-regular-webfont.woff') format('woff');
+    src: url(../fonts/ptmono-regular-webfont.woff2) format('woff2'),
+         url(../fonts/ptmono-regular-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
