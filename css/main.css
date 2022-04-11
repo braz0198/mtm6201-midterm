@@ -64,41 +64,103 @@ table {
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'pt_mono';
-    src: url(../fonts/ptmono-regular-webfont.woff2) format('woff2'),
-         url(../fonts/ptmono-regular-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-/* DEFAULTS FOR MIDTERM CSS */
-
-/* COLOR CODES FROM PROTOTYPE
+/* 
+COLOR CODES FROM PROTOTYPE
 Midnight purple - #650A71
-Lime Green - #32CD32
-Imperial Red - #EF322C
-Cyclamen - #F06AA5
-Pacific Blue - #30B4C5 */
-/* FONTS FROM PROTOTYPE
-font-family: 'Arial Black';
-font-family: 'Arial Rounded MT Bold';
-font-family: 'PT Mono'; */
-html{
-	background: grey;
-	font-family: 'arial_rounded_mt';
-}
-.container{
-	margin: 0 auto;
-}
-.container p{
-	background-color: blanchedalmond;
-	font-family: 'pt_mono';
-}
-/* ***START OF MEDIA QUEIRES FOR RESPONSIVENESS*** 
-@media screen and (min-width: 760px){
+Pacific Blue - #30B4C5
+Black and White Defaults
+***FONTS FROM PROTOTYPE***
+font-family: 'arial_black';
+font-family: 'arial_rounded_mt'; */
 
+/* DEFAULT OR UNIVERSAL STYLING */
+html{
+	background: #650A71;
+	font-family: 'arial_rounded_mt', sans-serif;
 }
-@media screen and (min-width:1024) {
-	
-} ***END OF MEDIA QUERIES FOR RESPONSIVENESS*** */
+body{
+    margin: 60px 26px;
+}
+textarea{
+    font-size: 24pt;
+}
+h1{
+    font-size: 27pt;
+    color: black;
+}
+h2{
+    font-size: 13pt;
+    color: white;
+}
+nav{
+    font-size: 30pt;
+}
+.orderform{
+    font-size: 36pt;
+}
+.banner{
+    background: #30B4C5;
+    font-family: 'arial_black', sans-serif; 
+}
+.donuts{
+    display: none;
+}
+.buns{
+    display: none;
+}
+a:link{
+    color: black;
+}
+/* Ran in to issues with contrast on visited links as they would turn purple and became unvisible */
+a:visited{
+    color: white;
+}
+button{
+    border:1px solid #650A71;
+    font-size: 24pt;
+}
+
+/* ***START OF MEDIA QUEIRES FOR RESPONSIVENESS*** */
+/* @media screen and (min-width: 768) {
+    
+} */
+@media screen and (min-width: 1080px){
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "banner banner"
+          "navigation logo"
+          "orderform orderform"
+          "orderform orderform";
+        width: 1080px;
+        margin: 60px;
+    }
+    .banner { display: grid;
+        grid-area: banner;
+    }
+    .navigation { display: grid;
+        grid-area: navigation; 
+    }
+    .donuts{
+        display: grid;
+        grid-area: navigation;
+        width: 136px;
+    }
+    .buns{
+        display: grid;
+        grid-area: navigation;
+        width: 136px;
+    } 
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1em;
+    } 
+    .logo { grid-area: logo; }
+    .orderform { grid-area: orderform; }
+}
+/* ***END OF MEDIA QUERIES FOR RESPONSIVENESS*** */
