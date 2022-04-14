@@ -93,9 +93,11 @@ h2{
     color: white;
 }
 nav{
+    background: #30B4C5;
     font-size: 30pt;
 }
 .orderform{
+    background: #30B4C5;
     font-size: 36pt;
 }
 .banner{
@@ -118,6 +120,15 @@ a:visited{
 button{
     border:1px solid #650A71;
     font-size: 24pt;
+}
+.yum:hover {
+    transition: 0.3s;
+    background-color: #30B4C5;
+}
+.yum{
+    transform: rotatex(3turn);
+    transition: 0.3s 0.5s;
+
 }
 
 /* ***START OF MEDIA QUEIRES FOR RESPONSIVENESS*** */
